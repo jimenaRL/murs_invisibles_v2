@@ -19,10 +19,10 @@ config = {
             "EESR-FR_MàJ_2022---EESR_FR_Regroupement_MàJ_2022.csv": [],
         },
         'rename': {
-            'country': 'pays',
-            'year': 'annee',
-            'indicator': 'nom',
-            'value': 'part de femmes',
+            'country': ['pays'],
+            'year': ['annee'],
+            'indicator': ['nom'],
+            'value': ['part de femmes'],
         },
     },
     "mapper": {

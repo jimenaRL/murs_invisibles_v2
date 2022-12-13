@@ -13,7 +13,7 @@ class PreProcesser():
         """
 
         self.fns = config['fns']
-        self.rename = {v: k for k, v in config['rename'].items()}
+        self.rename = {v: k for k, l in config['rename'].items() for v in l}
         self.values = ['value', 'femmes', 'hommes']
 
     @classmethod
