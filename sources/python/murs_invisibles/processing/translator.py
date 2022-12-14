@@ -1,3 +1,4 @@
+import sys
 import json
 import pandas as pd
 
@@ -48,7 +49,8 @@ class Translator():
             for i in missing_trads:
                 print(f'"{i}","{i}",')
             print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-            input("Press Enter to continue...")
+            input("Press Enter to stop execution...")
+            sys.exit()
         df = df.merge(self.ind_dict, on='indicator', how='inner')
         df['indicator'] = df[self.target_language]
         return df
