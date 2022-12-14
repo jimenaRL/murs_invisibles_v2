@@ -1,0 +1,83 @@
+pays,annee,nom,différence en minutes,Hommes,Femmes,Moyenne,
+France,1986,"Temps journalier physiologique (repos, hygiène) des femmes par rapport aux hommes",13,11:12:00,11:25:00,11:18:00,
+France,1986,"Temps journalier dédié au travail, études, formation  des femmes par rapport aux hommes",-151,5:47:00,3:16:00,4:30:00,
+France,1986,Temps journalier de travail domestique des femmes par rapport aux hommes,180,2:07:00,5:07:00,3:39:00,
+France,1986,Temps journalier de travail domestique ménage et courses des femmes par rapport aux hommes,180,1:10:00,4:10:00,2:42:00,
+France,1986,Temps journalier des soins aux enfants des femmes par rapport aux hommes,32,0:10:00,0:42:00,0:26:00,
+France,1986,Temps journalier de travail domestique jardinage et bricolage des femmes par rapport aux hommes,-32,0:47:00,0:15:00,0:31:00,
+France,1986,Temps libre par jour des femmes par rapport aux hommes,-41,4:09:00,3:28:00,3:48:00,
+France,1986,Temps passé en trajet et transports des femmes par rapport aux hommes,-1,0:45:00,0:44:00,0:45:00,
+France,1999,"Temps journalier physiologique (repos, hygiène) des femmes par rapport aux hommes",17,11:16:00,11:33:00,11:24:00,
+France,1999,"Temps journalier dédié au travail, études, formation  des femmes par rapport aux hommes",-123,5:30:00,3:27:00,4:28:00,
+France,1999,Temps journalier de travail domestique des femmes par rapport aux hommes,143,2:13:00,4:36:00,3:25:00,
+France,1999,Temps journalier de travail domestique ménage et courses des femmes par rapport aux hommes,145,1:15:00,3:40:00,2:28:00,
+France,1999,Temps journalier des soins aux enfants des femmes par rapport aux hommes,27,0:11:00,0:38:00,0:25:00,
+France,1999,Temps journalier de travail domestique jardinage et bricolage des femmes par rapport aux hommes,-29,0:47:00,0:18:00,0:32:00,
+France,1999,Temps libre par jour des femmes par rapport aux hommes,-39,4:25:00,3:46:00,4:06:00,
+France,1999,Temps passé en trajet et transports des femmes par rapport aux hommes,2,0:36:00,0:38:00,0:37:00,
+France,2010,"Temps journalier physiologique (repos, hygiène) des femmes par rapport aux hommes",19,11:17:00,11:36:00,11:26:00,
+France,2010,"Temps journalier dédié au travail, études, formation  des femmes par rapport aux hommes",-104,5:15:00,3:31:00,4:22:00,
+France,2010,Temps journalier de travail domestique des femmes par rapport aux hommes,108,2:13:00,4:01:00,3:07:00,
+France,2010,Temps journalier de travail domestique ménage et courses des femmes par rapport aux hommes,104,1:17:00,3:01:00,2:10:00,
+France,2010,Temps journalier des soins aux enfants des femmes par rapport aux hommes,26,0:19:00,0:45:00,0:32:00,
+France,2010,Temps journalier de travail domestique jardinage et bricolage des femmes par rapport aux hommes,-22,0:37:00,0:15:00,0:25:00,
+France,2010,Temps libre par jour des femmes par rapport aux hommes,-30,4:28:00,3:58:00,4:13:00,
+France,2010,Temps passé en trajet et transports des femmes par rapport aux hommes,7,0:48:00,0:55:00,0:51:00,
+Suède,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",6,90,96,,EUROSTAT
+Slovénie,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",6,82,88,,EUROSTAT
+Portugal,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",12,87,99,,EUROSTAT
+Finlande,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",12,79,91,,EUROSTAT
+Luxembourg,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",14,78,92,,EUROSTAT
+Belgique,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",14,75,89,,EUROSTAT
+Pays-Bas,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",15,83,98,,EUROSTAT
+Danemark,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",15,64,79,,EUROSTAT
+Irlande,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",17,78,95,,EUROSTAT
+Lettonie,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",17,70,87,,EUROSTAT
+Bulgarie,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",17,78,95,,EUROSTAT
+Estonie,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",19,74,93,,EUROSTAT
+Hongrie,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",19,70,89,,EUROSTAT
+France,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",19,74,93,,EUROSTAT
+Chypre,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",21,75,96,,EUROSTAT
+Autriche,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",23,67,90,,EUROSTAT
+Union Européenne,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",24,68,92,,EUROSTAT
+Italie,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",24,73,97,,EUROSTAT
+Royaume-Uni,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",24,62,86,,EUROSTAT
+Allemagne,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",24,64,88,,EUROSTAT
+Croatie,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",25,54,79,,EUROSTAT
+Lituanie,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",26,66,92,,EUROSTAT
+Espagne,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",27,68,95,,EUROSTAT
+Pologne,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",29,65,94,,EUROSTAT
+République Tchèque,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",30,55,85,,EUROSTAT
+Slovaquie,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",32,55,87,,EUROSTAT
+Roumanie,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",34,55,89,,EUROSTAT
+Malte,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",37,56,93,,EUROSTAT
+Grèce,2016,"Participation aux soins quotidiens aux enfants et éducation, part des femmes par rapport à celle des hommes",42,53,95,,EUROSTAT
+Suède,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",18,56,74,,EUROSTAT
+Lettonie,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",25,57,82,,EUROSTAT
+Danemark,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",27,55,82,,EUROSTAT
+Estonie,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",29,47,76,,EUROSTAT
+Finlande,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",29,57,86,,EUROSTAT
+Pays-Bas,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",34,47,81,,EUROSTAT
+Roumanie,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",34,41,75,,EUROSTAT
+Royaume-Uni,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",36,49,85,,EUROSTAT
+Luxembourg,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",39,39,78,,EUROSTAT
+Irlande,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",41,48,89,,EUROSTAT
+Hongrie,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",42,14,56,,
+Espagne,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",42,42,84,,
+Allemagne,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",43,29,72,,
+Malte,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",44,37,81,,
+Slovaquie,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",44,16,60,,
+France,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",44,36,80,,
+Union Européenne,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",45,34,79,,
+Pologne,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",49,33,82,,
+Belgique,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",48,33,81,,
+Lituanie,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",50,29,79,,
+Croatie,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",50,12,62,,
+République Tchèque,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",51,16,67,,
+Slovénie,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",54,27,81,,
+Chypre,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",54,27,81,,
+Autriche,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",55,28,83,,
+Portugal,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",59,19,78,,
+Bulgarie,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",60,13,73,,
+Italie,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",61,20,81,,
+Grèce,2016,"Participation à la cuisine et travaux ménagers, part des femmes par rapport à celle des hommes",69,16,85,,
