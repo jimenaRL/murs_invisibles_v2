@@ -34,7 +34,7 @@ config = {
     "filter": {
         'filter_indicator_path': filter_indicator_path,
         'year': {
-            'GOV_2021_13122022145537216.csv': 2015,
+            'GOV_2021_13122022145537216.csv': 2019,
         }
     },
     "translator": {
