@@ -14,6 +14,7 @@ config = {
             # "OCDE_MISE-à_JOUR_2022DE---OCDE_ONU_GOV_Minist_Parlement_MàJ_2022.csv": "one_save",
             # "OCDE_MISE-à_JOUR_2022DE---OCDE_ECARTS_SALAIRE_MàJ_2022.csv": "one_save",
             "OCDE_MISE-à_JOUR_2022DE---OCDE_TPS_Partiel_MàJ_2022.csv": "one_save",
+            "OCDE_MISE-à_JOUR_2022DE---OCDE_ENT_Inventrices_fusion_Poste_Directi_MàJ_2022.csv": "one_save",
         },
     },
     "preprocesser": {
@@ -21,6 +22,7 @@ config = {
             "OCDE_MISE-à_JOUR_2022DE---OCDE_ONU_GOV_Minist_Parlement_MàJ_2022.csv": ["remove_prop"],
             "OCDE_MISE-à_JOUR_2022DE---OCDE_ECARTS_SALAIRE_MàJ_2022.csv": ["remove_prop"],
             "OCDE_MISE-à_JOUR_2022DE---OCDE_TPS_Partiel_MàJ_2022.csv": ["remove_prop"],
+            "OCDE_MISE-à_JOUR_2022DE---OCDE_ENT_Inventrices_fusion_Poste_Directi_MàJ_2022.csv": ["remove_prop"],
         },
         'rename': {
             'country': ['PAYS'],
@@ -34,6 +36,7 @@ config = {
             "OCDE_MISE-à_JOUR_2022DE---OCDE_ONU_GOV_Minist_Parlement_MàJ_2022.csv": "proportion100",
             "OCDE_MISE-à_JOUR_2022DE---OCDE_ECARTS_SALAIRE_MàJ_2022.csv": "diffHFPROP",
             "OCDE_MISE-à_JOUR_2022DE---OCDE_TPS_Partiel_MàJ_2022.csv": "proportion100",
+            "OCDE_MISE-à_JOUR_2022DE---OCDE_ENT_Inventrices_fusion_Poste_Directi_MàJ_2022.csv": "proportion100",
         }
     },
     "filter": {
@@ -42,6 +45,7 @@ config = {
             "OCDE_MISE-à_JOUR_2022DE---OCDE_ONU_GOV_Minist_Parlement_MàJ_2022.csv": 2010,
             "OCDE_MISE-à_JOUR_2022DE---OCDE_ECARTS_SALAIRE_MàJ_2022.csv": 2010,
             "OCDE_MISE-à_JOUR_2022DE---OCDE_TPS_Partiel_MàJ_2022.csv": 2010,
+            "OCDE_MISE-à_JOUR_2022DE---OCDE_ENT_Inventrices_fusion_Poste_Directi_MàJ_2022.csv": 2010,
         }
     },
     "translator": {
@@ -51,6 +55,7 @@ config = {
             "OCDE_MISE-à_JOUR_2022DE---OCDE_ONU_GOV_Minist_Parlement_MàJ_2022.csv": "perc",
             "OCDE_MISE-à_JOUR_2022DE---OCDE_ECARTS_SALAIRE_MàJ_2022.csv": "diff_perc",
             "OCDE_MISE-à_JOUR_2022DE---OCDE_TPS_Partiel_MàJ_2022.csv": "perc",
+            "OCDE_MISE-à_JOUR_2022DE---OCDE_ENT_Inventrices_fusion_Poste_Directi_MàJ_2022.csv": "perc",
         }
     },
     "sorter": {
@@ -58,6 +63,7 @@ config = {
             "OCDE_MISE-à_JOUR_2022DE---OCDE_ONU_GOV_Minist_Parlement_MàJ_2022.csv": "none",
             "OCDE_MISE-à_JOUR_2022DE---OCDE_ECARTS_SALAIRE_MàJ_2022.csv": "none",
             "OCDE_MISE-à_JOUR_2022DE---OCDE_TPS_Partiel_MàJ_2022.csv": "none",
+            "OCDE_MISE-à_JOUR_2022DE---OCDE_ENT_Inventrices_fusion_Poste_Directi_MàJ_2022.csv": "none",
         }
     },
 }
