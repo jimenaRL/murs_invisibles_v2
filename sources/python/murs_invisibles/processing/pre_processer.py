@@ -46,7 +46,7 @@ class PreProcesser():
     def virg2point(self, df):
         for v in self.values:
             if v in df.columns:
-                df[v] = df[v].apply(lambda row: row.replace(',', '.'))
+                df[v] = df[v].apply(lambda row: float(str(row).replace(',', '.')))
         return df
 
     def remove_dollar_and_k(self, df):
