@@ -18,7 +18,7 @@ class PostProcesser():
         df['plus_ou_moins'] = df.apply(
             lambda row: 'plus' if row.value >= 1 else 'moins', axis=1)
         df['value'] = df.apply(
-            lambda row: row.value if row.value >= row.value else 1/row.value, axis=1)
+            lambda row: row.value if row.value >= 1 else 1/row.value, axis=1)
         df['value'] = df.apply(
             lambda row: f"{row.value:.2f} fois de {row.plus_ou_moins}", axis=1)
         return df
