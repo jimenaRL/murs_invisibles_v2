@@ -204,22 +204,22 @@ class Processer():
         # post merge
         if 'merge' in self.config:
             print("MERGED")
-            for dicc in self.config['merge']:
-                print(f">>>> {dicc['name']} <<<<")
+            for name, tables in self.config['merge'].items():
                 df_merged = []
-                for table in dicc["tables"]:
+                for table in tables:
                     path = os.path.join(self.base_path, table)
                     df = self.io.load(path)
                     df = self.preprocesser.process(table, df)
-                    df = self.filter.process(dicc['name'], df)
+                    df = self.filter.process(table, df)
                     df = self.translator.process(table, df)
                     df = self.mapper.process(table, df)
                     df = self.postprocesser.process(table, df)
-                    df = self.sorter.process(dicc["name"], df)
+                    df = self.sorter.process(table, df)
                     df_merged.append(df)
                 df_merged = pd.concat(df_merged)
+                import ipdb; ipdb.set_trace()
                 merged_path = self.io.get_out_path_indicator(
-                    path, dicc['name'])
+                    path, name)
                 df_merged = self.io.encode_rows(df_merged)
                 df_merged = df_merged[self.io.out_values]
                 df_merged = self.io.remove_nan(df_merged)
