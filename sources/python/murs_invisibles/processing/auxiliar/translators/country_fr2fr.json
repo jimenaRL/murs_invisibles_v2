@@ -245,6 +245,7 @@
     "La_Réunion": "La_Réunion",
     "Union Européenne": "Union Européenne",
     "Europe": "Europe",
+    "UE": "Union Européenne",
     "Suède": "Suède",
     "Pays de la Loire": "Pays de la Loire",
     "Normandie": "Normandie",
@@ -360,5 +361,6 @@
     "Monde": "Monde",
     "Pays de l'OCDE": "Pays de l'OCDE",
     "Montreuil": "Montreuil",
-    "Seine-Saint-Denis": "Seine-Saint-Denis"
+    "Seine-Saint-Denis": "Seine-Saint-Denis",
+    "Zone Euro": "Zone Euro"
 }
