@@ -86,6 +86,15 @@ class Mapper():
         return abs(row.value) / 100.
 
     @classmethod
+    def fois_plus_moins(cls, row):
+        """
+        row: pandas dataframe row
+             row.value contains t = w/m where m (resp. women) is the ratio of
+             men (res. women) among all men (resp. women)
+        """
+        return abs(cls.abstanh(row, factor=1))
+
+    @classmethod
     def diffFH_10(cls, row):
         return abs(row.value) / 10.
 
