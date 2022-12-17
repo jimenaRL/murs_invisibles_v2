@@ -11,29 +11,33 @@ config = {
         "header": 0,
         "encoding": 'utf-8',
         "fns": {
-            "secretariat_2022 - secret_part de femmes_MàJ_2022.csv": "one_save",
+            # "secretariat_2022 - secret_part de femmes_MàJ_2022.csv": "one_save",
+            "secretariat_2022 - secret_ECART_PP%_HF.csv": "one_save",
         },
     },
     "preprocesser": {
         'fns': {
             "secretariat_2022 - secret_part de femmes_MàJ_2022.csv": ["remove_prop"],
+            "secretariat_2022 - secret_ECART_PP%_HF.csv": [],
         },
         'rename': {
             'country': ['pays'],
             'year': ['annee'],
             'indicator': ['nom'],
-            'value': ['part de femmes'],
+            'value': ['part de femmes', 'taux femmes / taux hommes'],
         },
     },
     "mapper": {
         'fns': {
             "secretariat_2022 - secret_part de femmes_MàJ_2022.csv": "proportion100",
+            "secretariat_2022 - secret_ECART_PP%_HF.csv": "fois_plus_moins",
             }
     },
     "filter": {
         'filter_indicator_path': None,
         'year': {
             "secretariat_2022 - secret_part de femmes_MàJ_2022.csv": 2010,
+            "secretariat_2022 - secret_ECART_PP%_HF.csv": 2010,
         }
     },
     "translator": {
@@ -41,11 +45,13 @@ config = {
     "postprocesser": {
         'fns': {
             "secretariat_2022 - secret_part de femmes_MàJ_2022.csv": "perc",
+            "secretariat_2022 - secret_ECART_PP%_HF.csv": "fois_plus_moins",
         }
     },
     "sorter": {
         'fns': {
             "secretariat_2022 - secret_part de femmes_MàJ_2022.csv": "none",
+            "secretariat_2022 - secret_ECART_PP%_HF.csv": "none",
         }
     },
 }
