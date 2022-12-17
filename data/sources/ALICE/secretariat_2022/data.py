@@ -7,6 +7,12 @@ from murs_invisibles import Processer
 config = {
     "base_path": os.path.dirname(os.path.realpath(__file__)),
     "origin_language": "fr",
+    "merge": {
+        "secretariat_2022 - secret_ECART_PP%": [
+            "secretariat_2022 - secret_ECART_PP%_HF.csv",
+            "secretariat_2022 - secret_ECART_PP%_FF.csv"
+        ]
+    },
     "io": {
         "header": 0,
         "encoding": 'utf-8',
