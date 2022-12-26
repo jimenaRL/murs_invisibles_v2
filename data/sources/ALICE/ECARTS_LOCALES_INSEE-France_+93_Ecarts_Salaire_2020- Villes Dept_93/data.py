@@ -17,8 +17,8 @@ config = {
     },
     "preprocesser": {
         'fns': {
-            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - FUSION_ECART_Locales_93.csv": ["percRel1"],
-            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - Villes_DPT_93_Ecarts_salaires_2020.csv": ["percRel1"],
+            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - FUSION_ECART_Locales_93.csv": ["percRel100"],
+            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - Villes_DPT_93_Ecarts_salaires_2020.csv": ["percRel100"],
         },
         'rename': {
             'country': ['pays'],
@@ -31,8 +31,8 @@ config = {
     },
     "mapper": {
         'fns': {
-            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - FUSION_ECART_Locales_93.csv": "percRel100_1",
-            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - Villes_DPT_93_Ecarts_salaires_2020.csv": "percRel100_1",
+            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - FUSION_ECART_Locales_93.csv": "percRel100_10",
+            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - Villes_DPT_93_Ecarts_salaires_2020.csv": "percRel100_10",
             }
     },
     "filter": {
