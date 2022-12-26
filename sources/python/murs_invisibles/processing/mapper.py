@@ -153,4 +153,7 @@ class Mapper():
         create map value
         """
         df['map_value'] = df.apply(getattr(self, self.fns[table]), axis=1)
+        df['map_value'] = df.apply(
+            lambda row: min(max(row.map_value, 0), 1), axis=1)
+
         return df
