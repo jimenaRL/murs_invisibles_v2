@@ -25,14 +25,14 @@ config = {
             'year': ['annee'],
             'indicator': ['nom'],
             'value': ['value'],
-            'value_men': ['hommes'],
-            'value_women': ['femmes'],
+            'value_men': ['taux hommes parmi hommes', 'salaire hommes'],
+            'value_women': ['taux femmes parmi femmes', 'salaire femmes'],
         },
     },
     "mapper": {
         'fns': {
-            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - FUSION_ECART_Locales_93.csv": "percRel100_10",
-            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - Villes_DPT_93_Ecarts_salaires_2020.csv": "percRel100_10",
+            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - FUSION_ECART_Locales_93.csv": "diffHFPROP",
+            "ECARTS_LOCALES_INSEE-France_+93_Ecarts_Salaire_2020- Villes Dept_93 - Villes_DPT_93_Ecarts_salaires_2020.csv": "diffHFPROP",
             }
     },
     "filter": {
