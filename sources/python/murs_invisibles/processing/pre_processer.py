@@ -28,6 +28,13 @@ class PreProcesser():
         """
         return df.rename(columns=self.rename)
 
+    def remove_div_and_zero(self, df):
+        df = df[df.value != "#DIV/0!"]
+        df = df[df.value != 0]
+        df = df[df.value != "0"]
+        return df
+
+
     def remove_prop(self, df):
         for v in self.values:
             if v in df.columns:
