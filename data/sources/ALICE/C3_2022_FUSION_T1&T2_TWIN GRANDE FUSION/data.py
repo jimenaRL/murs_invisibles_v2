@@ -40,7 +40,7 @@ config = {
     },
     "postprocesser": {
         'fns': {
-            "C3_2022_FUSION_T1&T2_TWIN GRANDE FUSION - Fusion_T2_ECarts_C3.csv": "perc",
+            "C3_2022_FUSION_T1&T2_TWIN GRANDE FUSION - Fusion_T2_ECarts_C3.csv": "diff_perc",
         }
     },
     "sorter": {
