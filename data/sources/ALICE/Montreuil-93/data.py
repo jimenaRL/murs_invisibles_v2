@@ -13,24 +13,38 @@ config = {
         "fns": {
             "Montreuil-93 - DD91_Familles monoparentales.csv": "one_save",
             "Montreuil-93 - NAT2-MONTREUIL-FH.csv": "one_save",
+            "Montreuil-93 - NAT2-MONTREUIL-FF.csv": "one_save",
+            "Montreuil-93 - NAT2-93-FH.csv": "one_save",
+            "Montreuil-93 - NAT2-93-FF.csv": "one_save",
+            "Montreuil-93 - SENTIMENT-DISCRIMINATION.csv": "one_save",
         },
     },
     "preprocesser": {
         'fns': {
             "Montreuil-93 - DD91_Familles monoparentales.csv": [],
             "Montreuil-93 - NAT2-MONTREUIL-FH.csv": ["remove_div_and_zero"],
+            "Montreuil-93 - NAT2-MONTREUIL-FF.csv": ["remove_div_and_zero"],
+            "Montreuil-93 - NAT2-93-FH.csv": ["remove_div_and_zero"],
+            "Montreuil-93 - NAT2-93-FF.csv": ["remove_div_and_zero"],
+            "Montreuil-93 - SENTIMENT-DISCRIMINATION.csv": ["remove_div_and_zero"],
         },
         'rename': {
             'country': ['pays'],
             'year': ['annee'],
             'indicator': ['nom'],
-            'value': ['valeur femmes / valeur hommes'],
+            'value': [
+                'valeur femmes / valeur hommes',
+                'valeur A / valeur B'],
         },
     },
     "mapper": {
         'fns': {
             "Montreuil-93 - DD91_Familles monoparentales.csv": "fois_plus_moins_1",
             "Montreuil-93 - NAT2-MONTREUIL-FH.csv": "fois_plus_moins_01",
+            "Montreuil-93 - NAT2-MONTREUIL-FF.csv": "fois_plus_moins_1",
+            "Montreuil-93 - NAT2-93-FH.csv": "fois_plus_moins_01",
+            "Montreuil-93 - NAT2-93-FF.csv": "fois_plus_moins_1",
+            "Montreuil-93 - SENTIMENT-DISCRIMINATION.csv": "fois_plus_moins_1",
             }
     },
     "filter": {
@@ -38,6 +52,10 @@ config = {
         'year': {
             "Montreuil-93 - DD91_Familles monoparentales.csv": 2010,
             "Montreuil-93 - NAT2-MONTREUIL-FH.csv": 2010,
+            "Montreuil-93 - NAT2-MONTREUIL-FF.csv": 2010,
+            "Montreuil-93 - NAT2-93-FH.csv": 2010,
+            "Montreuil-93 - NAT2-93-FF.csv": 2010,
+            "Montreuil-93 - SENTIMENT-DISCRIMINATION.csv": 2010,
         }
     },
     "translator": {
@@ -46,12 +64,20 @@ config = {
         'fns': {
             "Montreuil-93 - DD91_Familles monoparentales.csv": "fois_plus_moins",
             "Montreuil-93 - NAT2-MONTREUIL-FH.csv": "fois_plus_moins",
+            "Montreuil-93 - NAT2-MONTREUIL-FF.csv": "fois_plus_moins",
+            "Montreuil-93 - NAT2-93-FH.csv": "fois_plus_moins",
+            "Montreuil-93 - NAT2-93-FF.csv": "fois_plus_moins",
+            "Montreuil-93 - SENTIMENT-DISCRIMINATION.csv": "fois_plus_moins",
         }
     },
     "sorter": {
         'fns': {
             "Montreuil-93 - DD91_Familles monoparentales.csv": "none",
             "Montreuil-93 - NAT2-MONTREUIL-FH.csv": "none",
+            "Montreuil-93 - NAT2-MONTREUIL-FF.csv": "none",
+            "Montreuil-93 - NAT2-93-FH.csv": "none",
+            "Montreuil-93 - NAT2-93-FF.csv": "none",
+            "Montreuil-93 - SENTIMENT-DISCRIMINATION.csv": "none",
         }
     },
 }
