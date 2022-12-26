@@ -27,7 +27,7 @@ config = {
     },
     "mapper": {
         'fns': {
-            "C3_2022_FUSION_T1&T2_TWIN GRANDE FUSION - Fusion_T2_ECarts_C3.csv": "proportion100",
+            "C3_2022_FUSION_T1&T2_TWIN GRANDE FUSION - Fusion_T2_ECarts_C3.csv": "diffHFPROP",
             }
     },
     "filter": {
