@@ -1,22 +1,22 @@
-pays,annee,nom,valeur,valeur femmes,ensemble femmes,valeur hommes,ensemble hommes,ref
-Montreuil,2019,"Personnes au foyer, part de femmes françaises par rapport à celle des hommes français",12 fois plus,1192,38034,89,33545,"https://docs.google.com/spreadsheets/d/1jnpQr_rTXSYKhOaOg5wGHkmc0EO2uJGt/edit#gid=845548632
+pays,annee,nom,valeur,valeur femmes / valeur hommes,valeur femmes,ensemble femmes,valeur hommes,ensemble hommes,ref
+Montreuil,2019,"Personnes au foyer, part de femmes françaises par rapport à celle des hommes français",12 fois plus,11.81250602,1192,38034,89,33545,"https://docs.google.com/spreadsheets/d/1jnpQr_rTXSYKhOaOg5wGHkmc0EO2uJGt/edit#gid=845548632
 
 NAT2 - Population de 15 ans ou plus par sexe, type d'activité et nationalité en 2019
 Commune de Montreuil (93048)
 © Insee"
-Montreuil,2019,"Personnes au foyer, part de femmes étrangères par rapport à celle des hommes étrangers",26 fois plus,1214,7832,58,9836,
-Montreuil,2019,"Personnes au foyer, part de femmes par rapport à celle des hommes",15 fois plus,2405,45866,147,43381,
-Montreuil,2019,"Personnes au foyer, part de femmes rapport à celle des hommes",15 fois plus,2405,45866,147,43381,
-Montreuil,2019,"Personnes au foyer, part de femmes françaises de naissance par rapport à celle des hommes français de naissance",10 fois plus,810,31941,72,27938,
-Montreuil,2019,"Personnes au foyer, part de femmes françaises par acquisition par rapport à celle des hommes français par acquisition",21 fois plus,382,6093,17,5607,
-Montreuil,2019,"Personnes au foyer, part de femmes portugaises par rapport à celle des hommes portugais",#DIV/0!,48,638,0,638,
-Montreuil,2019,"Personnes au foyer, part de femmes italiennes par rapport à celle des hommes italiens",#DIV/0!,8,297,0,265,
-Montreuil,2019,"Personnes au foyer, part de femmes espagnoles par rapport à celle des hommes espagnols",#DIV/0!,0,176,0,160,
-Montreuil,2019,"Personnes au foyer, part de femmes d'autres nationalités de l'UE par rapport à celle des hommes d'autres nationalités de l'UE",6 fois plus,135,811,25,827,
-Montreuil,2019,"Personnes au foyer, part de femmes d'autres nationalités de l'Europe par rapport à celle des hommes d'autres nationalités de l'Europe",#DIV/0!,40,473,0,408,
-Montreuil,2019,"Personnes au foyer, part de femmes algériennes rapport à celle des hommes algeériens",31 fois plus,363,1417,14,1694,
-Montreuil,2019,"Personnes au foyer, part de femmes marocaines rapport à celle des hommes marocains",#DIV/0!,151,582,0,486,
-Montreuil,2019,"Personnes au foyer, part de femmes tuisiennes rapport à celle des hommes tunisiens",#DIV/0!,108,357,0,533,
-Montreuil,2019,"Personnes au foyer, part de femmes d'autres nationalités d'Afrique rapport à celle des hommes d'autres nationalités d'Afrique",68 fois plus,161,1725,5,3657,
-Montreuil,2019,"Personnes au foyer, part de femmes turques rapport à celle des hommes turcs",15 fois plus,42,142,4,208,
-Montreuil,2019,"Personnes au foyer, part de femmes d'autres nationalités rapport à celle des hommes d'autres nationalités",11 fois plus,157,1214,11,959,
+Montreuil,2019,"Personnes au foyer, part de femmes étrangères par rapport à celle des hommes étrangers",26 fois plus,26.28672819,1214,7832,58,9836,
+Montreuil,2019,"Personnes au foyer, part de femmes par rapport à celle des hommes",15 fois plus,15.47413702,2405,45866,147,43381,
+Montreuil,2019,"Personnes au foyer, part de femmes rapport à celle des hommes",15 fois plus,15.47413702,2405,45866,147,43381,
+Montreuil,2019,"Personnes au foyer, part de femmes françaises de naissance par rapport à celle des hommes français de naissance",10 fois plus,9.840095802,810,31941,72,27938,
+Montreuil,2019,"Personnes au foyer, part de femmes françaises par acquisition par rapport à celle des hommes français par acquisition",21 fois plus,20.6782518,382,6093,17,5607,
+Montreuil,2019,"Personnes au foyer, part de femmes portugaises par rapport à celle des hommes portugais",#DIV/0!,#DIV/0!,48,638,0,638,
+Montreuil,2019,"Personnes au foyer, part de femmes italiennes par rapport à celle des hommes italiens",#DIV/0!,#DIV/0!,8,297,0,265,
+Montreuil,2019,"Personnes au foyer, part de femmes espagnoles par rapport à celle des hommes espagnols",#DIV/0!,#DIV/0!,0,176,0,160,
+Montreuil,2019,"Personnes au foyer, part de femmes d'autres nationalités de l'UE par rapport à celle des hommes d'autres nationalités de l'UE",6 fois plus,5.506535142,135,811,25,827,
+Montreuil,2019,"Personnes au foyer, part de femmes d'autres nationalités de l'Europe par rapport à celle des hommes d'autres nationalités de l'Europe",#DIV/0!,#DIV/0!,40,473,0,408,
+Montreuil,2019,"Personnes au foyer, part de femmes algériennes rapport à celle des hommes algeériens",31 fois plus,30.99717713,363,1417,14,1694,
+Montreuil,2019,"Personnes au foyer, part de femmes marocaines rapport à celle des hommes marocains",#DIV/0!,#DIV/0!,151,582,0,486,
+Montreuil,2019,"Personnes au foyer, part de femmes tuisiennes rapport à celle des hommes tunisiens",#DIV/0!,#DIV/0!,108,357,0,533,
+Montreuil,2019,"Personnes au foyer, part de femmes d'autres nationalités d'Afrique rapport à celle des hommes d'autres nationalités d'Afrique",68 fois plus,68.264,161,1725,5,3657,
+Montreuil,2019,"Personnes au foyer, part de femmes turques rapport à celle des hommes turcs",15 fois plus,15.38028169,42,142,4,208,
+Montreuil,2019,"Personnes au foyer, part de femmes d'autres nationalités rapport à celle des hommes d'autres nationalités",11 fois plus,11.27474914,157,1214,11,959,
