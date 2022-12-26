@@ -46,6 +46,10 @@ class Mapper():
         return abs(row.value) / 30.
 
     @classmethod
+    def percRel100_10(cls, row):
+        return abs(row.value) / 10.
+
+    @classmethod
     def diff_fm_minutes(cls, row):
         return abs(row.value) / 180.
 
