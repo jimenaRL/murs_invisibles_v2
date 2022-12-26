@@ -95,21 +95,12 @@ class PreProcesser():
         return df
 
     @classmethod
-    def percRel1(cls, df):
-        """
-        From Insee différence de salaires (F-H)/H (en %)
-        https://drive.google.com/file/d/1iG7Zlq7eSL84n9bX-oROzYxK8GPhiMqA/view?usp=sharing
-        """
-        df['value'] = (df.femmes - df.hommes) / df.hommes
-        return df
-
-    @classmethod
     def percRel100(cls, df):
         """
         From Insee différence de salaires (F-H)/H (en %)
         https://drive.google.com/file/d/1iG7Zlq7eSL84n9bX-oROzYxK8GPhiMqA/view?usp=sharing
         """
-        df['value'] = 100 * (df.femmes - df.hommes) / df.hommes
+        df['value'] = 100 * (df.value_women - df.value_men) / df.value_men
         return df
 
     def get_wm_onu_gender_wages_gap(self, df):
