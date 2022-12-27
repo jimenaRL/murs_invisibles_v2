@@ -11,9 +11,9 @@ config = {
         "header": 0,
         "encoding": 'utf-8',
         "fns": {
-            # "FUSION_Conditions de vie_18REG_Société_MAJ_2022 - Données sociales_MàJ_2022.csv": "one_save",
+            "FUSION_Conditions de vie_18REG_Société_MAJ_2022 - Données sociales_MàJ_2022.csv": "one_save",
             # "FUSION_Conditions de vie_18REG_Société_MAJ_2022 - Conditions de vie_MàJ_2022_temps.csv": "one_save",
-            "FUSION_Conditions de vie_18REG_Société_MAJ_2022 - Conditions de vie_MàJ_2022_parts.csv": "one_save"
+            # "FUSION_Conditions de vie_18REG_Société_MAJ_2022 - Conditions de vie_MàJ_2022_parts.csv": "one_save"
         },
     },
     "preprocesser": {
@@ -31,7 +31,7 @@ config = {
     },
     "mapper": {
         'fns': {
-            "FUSION_Conditions de vie_18REG_Société_MAJ_2022 - Données sociales_MàJ_2022.csv": "proportion100",
+            "FUSION_Conditions de vie_18REG_Société_MAJ_2022 - Données sociales_MàJ_2022.csv": "diffHFPROP",
             "FUSION_Conditions de vie_18REG_Société_MAJ_2022 - Conditions de vie_MàJ_2022_temps.csv": "diff_fm_minutes",
             "FUSION_Conditions de vie_18REG_Société_MAJ_2022 - Conditions de vie_MàJ_2022_parts.csv": "diffFH_50",
         }
