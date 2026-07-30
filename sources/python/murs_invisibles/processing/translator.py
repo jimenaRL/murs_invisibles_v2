@@ -22,7 +22,8 @@ class Translator():
         self.target_language = self.config['indicator'].split('2')[-1]
 
         with open(config['country_dict_path'], 'r', encoding='utf-8') as fp:
-            self.country_dict = json.load(fp, encoding='utf-8')
+            # self.country_dict = json.load(fp, encoding='utf-8')
+            self.country_dict = json.load(fp)
 
         self.ind_dict = pd.read_csv(config['ind_dict_path'])
         # HOT FIX #

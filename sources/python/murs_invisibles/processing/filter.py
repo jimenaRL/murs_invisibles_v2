@@ -36,8 +36,9 @@ class Filter(object):
         filter year
         """
         # don't filter non integer years
-        if str(df['year'].dtype) == 'object':
+        if str(df['year'].dtypes) == 'object':
             return df
+        df = df.loc[:,~df.columns.duplicated()].copy()
         return df[df['year'] >= self.years[table]]
 
     def filter_country(self, df):
