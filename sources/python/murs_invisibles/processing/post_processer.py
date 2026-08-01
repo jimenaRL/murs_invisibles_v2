@@ -31,7 +31,7 @@ class PostProcesser():
         df['sign'] = df.apply(
             lambda row: '+' if row.value >= 0 else '-', axis=1)
         df['value'] = df.apply(
-            lambda row: row.sign + '%1.1f' % abs(row.value) + 'p%', axis=1)
+            lambda row: row.sign + '%1.0f' % abs(row.value) + ' p%', axis=1)
         return df
 
     @classmethod
@@ -43,11 +43,19 @@ class PostProcesser():
         return df
 
     @classmethod
-    def diff_hours(cls, df):
+    def diff_hours_en_minutes(cls, df):
         df['sign'] = df.apply(
             lambda row: '+' if row.value >= 0 else '-', axis=1)
         df['value'] = df.apply(
             lambda row: row.sign + '%i' % abs(60 * row.value) + " min", axis=1)
+        return df
+
+    @classmethod
+    def diff_hours(cls, df):
+        df['sign'] = df.apply(
+            lambda row: '+' if row.value >= 0 else '-', axis=1)
+        df['value'] = df.apply(
+            lambda row: row.sign + '%1.1f' % abs(row.value) + " h", axis=1)
         return df
 
     @classmethod
