@@ -19,6 +19,10 @@ class Mapper():
         return np.tanh(factor * np.abs(row.value))
 
     @classmethod
+    def abstanh_4(cls, row):
+        return cls.abstanh(row, factor=0.4)
+
+    @classmethod
     def proportion1(cls, row):
         """
         row: pandas dataframe row
