@@ -166,37 +166,15 @@ class Processer():
             print(f"***** {table} ****")
             path = os.path.join(self.base_path, table)
 
-            # load
             df = self.io.load(path)
-            # print(df.head())
 
-            # preprocess
             df = self.preprocesser.process(table, df)
-            # print(df.head())
-
-            # filter
             df = self.filter.process(table, df)
-            # print(df.head())
-
-            # translate
             df = self.translator.process(table, df)
-            # print(df.head())
-
-            # compute map value
             df = self.mapper.process(table, df)
-            # print(df.head())
-
-            # postprocess
             df = self.postprocesser.process(table, df)
-            # print(df.head())
-
-            # sort
             df = self.sorter.process(table, df)
-            # print(df.head())
-
-            # save
             df = self.io.save(table, df, path)
-            # print(df.head())
 
             # store df for postmerge
             out[table] = df
@@ -217,7 +195,6 @@ class Processer():
                     df = self.sorter.process(table, df)
                     df_merged.append(df)
                 df_merged = pd.concat(df_merged)
-                import ipdb; ipdb.set_trace()
                 merged_path = self.io.get_out_path_indicator(
                     path, name)
                 df_merged = self.io.encode_rows(df_merged)
