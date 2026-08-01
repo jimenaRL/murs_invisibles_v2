@@ -209,6 +209,56 @@ class PreProcesser():
 
         return df
 
+    def get_wm_oecd_2026(self, df):
+        """
+        Dataframe preprocessing
+        """
+
+        hash_cols = set(df.columns.tolist())
+        hash_cols -= set(['SEX', 'Sex', 'Sexe', 'value'])
+
+        df['hash'] = df.apply(
+            lambda row: hash(
+                ''.join([str(row[c]) for c in hash_cols])), axis=1)
+
+        hash_count = df.groupby(by='hash').count().SEX \
+            .to_frame().reset_index().rename({'SEX': 'hash_count'}, axis=1)
+        valid_hash = hash_count[hash_count.hash_count == 2]
+
+        df = pd.merge(df, valid_hash, how='inner', on=['hash'])
+
+        if 'WOMEN' in df['SEX'].unique().tolist():
+            women_df = df[df['SEX'] == 'WOMEN']
+            men_df = df[df['SEX'] == 'MEN']
+        elif 'GIRLS' in df['SEX'].unique().tolist():
+            women_df = df[df['SEX'] == 'GIRLS']
+            men_df = df[df['SEX'] == 'BOYS']
+        elif 'F' in df['SEX'].unique().tolist():
+            women_df = df[df['SEX'] == 'F']
+            men_df = df[df['SEX'] == 'M']
+        else:
+            raise ValueError(
+                f"Didn't found `GIRLS` nor `WOMEN` nor `F` in df['SEX']:\
+                    {df['SEX'].unique}")
+
+        merge_on = list(
+            set(self.rename.values()) - set(['value']) | set(['hash']))
+
+        df = pd.merge(women_df,
+                      men_df,
+                      how='inner',
+                      on=merge_on,
+                      suffixes=('_women', '_men'))
+
+        merge_on.remove('hash')
+        keep = merge_on + ['value_men', 'value_women']
+        df = df[keep]
+
+        df = df.rename(
+            {'value_men': 'hommes', 'value_women': 'femmes'}, axis=1)
+
+        return df
+
     def try_float_conversion(self, df):
         for v in self.values:
             if v in df.columns:
@@ -217,6 +267,9 @@ class PreProcesser():
                 except:
                     pass
         return df
+
+    def dropna(self, df):
+        return df.dropna()
 
     def process(self, table, df):
         df = self.format_columns(df)
