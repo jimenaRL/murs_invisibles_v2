@@ -6,10 +6,22 @@ Southern Africa
 Sub-Saharan Africa
 Western Africa
 Northern America
+Northern America and Europe
 Latin America & the Caribbean
+Central Asia and Southern Asia
+Western Asia and Northern Africa
+Eastern Asia and South-eastern Asia
+Land Locked Developing Countries (LLDCs)
+Least Developed Countries (LDCs)
+Netherlands (Kingdom of the)
+Small Island Developing States (SIDS)
+Oceania excluding Australia and New Zealand
 Eastern Asia
 South-eastern Asia
 Southern Asia
+European Union (27 countries)
+European Union (19 countries) in OECD
+European Union (22 countries) in OECD
 Western Asia
 Europe
 Oceania
@@ -64,3 +76,9 @@ United Kingdom (Scotland)
 Kosovo under UNSCR 1244
 OAVG
 OECD European Union member countries
+Latin America and the Caribbean
+World
+G7
+G20
+European Union
+America
