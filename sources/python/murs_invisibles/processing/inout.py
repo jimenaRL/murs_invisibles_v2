@@ -169,8 +169,7 @@ class IO():
                        encoding='utf-8',
                        sep=self.out_sep)
             print(tmp.sample(n=min(self.n_show, len(tmp))))
-            print(f"{tmp} entries")
-            print(f"Saved at {out_path}\n")
+            print(f"Saved {len(tmp)} entries at {out_path}\n")
 
     @classmethod
     def remove_nan(cls, df):
