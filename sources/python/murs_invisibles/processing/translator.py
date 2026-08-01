@@ -33,6 +33,10 @@ class Translator():
         """
         translate country
         """
+        missing = set(df['country'].unique()) - self.country_dict.keys()
+        if missing:
+            e = f"Missing entries in country dict: {'\n' + '\n'.join(missing)}"
+            raise ValueError(e)
         df['country'] = df['country'].apply(
             lambda x: self.country_dict[x])
         return df
