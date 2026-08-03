@@ -12,41 +12,41 @@ config = {
         "header": 0,
         "encoding": 'utf-8',
         "fns": {
-            'GOV_2021_13122022145537216.csv': 'sep_save',
+            'OECD.WISE.RSB,DSD_SDG@DF_SDG_G_5,2.0+..5_5.C050501.._T.._T._T._T..csv': 'sep_save',
         },
     },
     "preprocesser": {
         'fns': {
-            'GOV_2021_13122022145537216.csv': ['no_process'],
+            'OECD.WISE.RSB,DSD_SDG@DF_SDG_G_5,2.0+..5_5.C050501.._T.._T._T._T..csv': ['no_process'],
         },
         'rename': {
-            'country': ['Country', 'LOCATION'],
-            'year': ['Year', 'TIME'],
-            'indicator': ['Indicator', 'SUBJECT'],
-            'value': ['Value'],
+            'country': ['Reference area'],
+            'year': ['TIME_PERIOD'],
+            'indicator': ['Measure'],
+            'value': ['OBS_VALUE'],
         },
     },
     "mapper": {
         'fns': {
-            'GOV_2021_13122022145537216.csv': 'proportion100',
+            'OECD.WISE.RSB,DSD_SDG@DF_SDG_G_5,2.0+..5_5.C050501.._T.._T._T._T..csv': 'proportion100',
         }
     },
     "filter": {
         'filter_indicator_path': filter_indicator_path,
         'year': {
-            'GOV_2021_13122022145537216.csv': 2018,
+            'OECD.WISE.RSB,DSD_SDG@DF_SDG_G_5,2.0+..5_5.C050501.._T.._T._T._T..csv': 2000,
         }
     },
     "translator": {
     },
     "postprocesser": {
         'fns': {
-            'GOV_2021_13122022145537216.csv': 'perc',
+            'OECD.WISE.RSB,DSD_SDG@DF_SDG_G_5,2.0+..5_5.C050501.._T.._T._T._T..csv': 'perc_2v',
         }
     },
     "sorter": {
         'fns': {
-            'GOV_2021_13122022145537216.csv': 'date_country',
+            'OECD.WISE.RSB,DSD_SDG@DF_SDG_G_5,2.0+..5_5.C050501.._T.._T._T._T..csv': 'date_country',
         }
     },
 }
