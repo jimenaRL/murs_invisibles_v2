@@ -12,12 +12,14 @@ config = {
         "header": 0,
         "encoding": 'utf-8',
         "fns": {
-            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': 'sep_save'
+            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': 'sep_save',
+            "OECD.ENV.EPI,DSD_PAT_DEV@DF_PAT_DEV,1.0+.A.ENV_PAT.PT_PATN.ONE.F.csv": 'sep_save',
         },
     },
     "preprocesser": {
         'fns': {
-            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': ['get_wm_oecd_2026', 'diffFH']
+            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': ['get_wm_oecd_2026', 'diffFH'],
+            'OECD.ENV.EPI,DSD_PAT_DEV@DF_PAT_DEV,1.0+.A.ENV_PAT.PT_PATN.ONE.F.csv': ['no_process'],
         },
         'rename': {
             'country': ['Reference area'],
@@ -28,25 +30,29 @@ config = {
     },
     "mapper": {
         'fns': {
-            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': 'diffFH_100'
+            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': 'diffFH_100',
+            'OECD.ENV.EPI,DSD_PAT_DEV@DF_PAT_DEV,1.0+.A.ENV_PAT.PT_PATN.ONE.F.csv': 'proportion100',
         }
     },
     "filter": {
         'filter_indicator_path': filter_indicator_path,
         'year': {
-            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': 2000
+            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': 2000,
+            'OECD.ENV.EPI,DSD_PAT_DEV@DF_PAT_DEV,1.0+.A.ENV_PAT.PT_PATN.ONE.F.csv': 2000,
         }
     },
     "translator": {
     },
     "postprocesser": {
         'fns': {
-            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': 'diff_pp1'
+            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': 'diff_pp1',
+            'OECD.ENV.EPI,DSD_PAT_DEV@DF_PAT_DEV,1.0+.A.ENV_PAT.PT_PATN.ONE.F.csv': 'perc_2v',
         }
     },
     "sorter": {
         'fns': {
-            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': 'date_country'
+            'OECD.DEV.NPG,DSD_GID@DF_GID_2023,+.RAPFR_AFS_PCT_1.PT_POP.....csv': 'date_country',
+            'OECD.ENV.EPI,DSD_PAT_DEV@DF_PAT_DEV,1.0+.A.ENV_PAT.PT_PATN.ONE.F.csv': 'date_country',
         }
     },
 }
