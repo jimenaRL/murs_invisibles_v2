@@ -109,6 +109,11 @@ class PreProcesser():
         df = df.drop('Occupation', axis=1)
         return self.get_wm_onu(df)
 
+    def get_wm_onu_age_2026(self, df):
+        df.indicator = df.indicator + ' ' + df.age_desc
+        df = df.drop('age_desc', axis=1)
+        return self.get_wm_onu(df)
+
     def get_wm_onu_age(self, df):
         df.indicator = df.indicator + ' ' + df.Age
         df = df.drop('Age', axis=1)
@@ -117,7 +122,7 @@ class PreProcesser():
     def get_wm_onu(self, df):
         if 'Location' in df and 'All areas' in df.Location.unique():
             df = df[df.Location == 'All areas']
-        df = df[df.Sex != 'Both sexes']
+        df = df[df.sex != 'Both sexes']
         df = df.drop([
             'Location', 'Region', 'Occupation', 'LowerBound',
             'UpperBound', 'Unit', 'NatureData', 'OriginData', 'Country Code',
@@ -126,20 +131,20 @@ class PreProcesser():
             axis=1, errors='ignore')
 
         hash_cols = set(df.columns.tolist())
-        hash_cols -= set(['value', 'Sex'])
+        hash_cols -= set(['value', 'sex'])
 
         df['hash'] = df.apply(
             lambda row: hash(
                 ''.join([str(row[c]) for c in hash_cols])), axis=1)
 
-        hash_count = df.groupby(by='hash').count().Sex \
-            .to_frame().reset_index().rename({'Sex': 'hash_count'}, axis=1)
+        hash_count = df.groupby(by='hash').count().sex \
+            .to_frame().reset_index().rename({'sex': 'hash_count'}, axis=1)
         valid_hash = hash_count[hash_count.hash_count == 2]
 
         df = pd.merge(df, valid_hash, how='inner', on=['hash'])
 
-        women_df = df[df['Sex'] == 'Female']
-        men_df = df[df['Sex'] == 'Male']
+        women_df = df[df['sex'] == 'F']
+        men_df = df[df['sex'] == 'M']
 
         merge_on = list(
             set(self.rename.values()) - set(['value']) | set(['hash']))
