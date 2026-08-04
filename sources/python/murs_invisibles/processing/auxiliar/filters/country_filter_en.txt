@@ -90,3 +90,5 @@ European Union (27 countries from 01/02/2020)
 OECD America
 OECD Europe
 Martinique
+OECD average country
+European Union countries in OECD
